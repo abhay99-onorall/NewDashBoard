@@ -1,0 +1,114 @@
+.main_container{
+    width: 680px;
+    height: 450px;
+    display: flex;
+    background-color: #fff;
+}
+
+.left_container{
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+.title{
+    position: relative;
+    width: 100%;
+    height: 20%;
+}
+
+.expand_button{
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #A06CD5;
+}
+
+.expand_button > span{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 100%;
+    height: 80%;
+}
+
+.right_container{
+    width: 75%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.form{
+
+}
+.label_input_container{
+    height: 4rem;
+}
+
+.lable_input_time_container{
+    height: 4rem;
+    display: flex;
+}
+.label{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+
+
+color: #112A46;
+
+}
+
+.input, .input_time{
+    padding-left: 10px;
+    width: 80%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.input_time{
+    border-bottom: none;
+}
+
+.input_time::-webkit-datetime-edit-ampm-field {
+    display: none;
+  }
+
+  .textarea{
+    
+width: 378px;
+height: 146px;
+resize: none;
+outline: none;
+padding: 10px;
+background: rgba(236, 236, 236, 0.99);
+border-radius: 10px
+  }
+
+  .submit{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 18px;
+padding: 5px;
+border: none;
+outline: none;
+
+
+color: #331978;
+    background: #E2CFEA;
+border-radius: 10px;
+  }
