@@ -1,8 +1,8 @@
 import React from 'react'
-import style from './DashStructure3.module.css'
-import { heading2 } from '../DashStructure2/MoreDetailsData'
+import style from './VideoDetails.module.css'
+import { heading2 } from '../../../../Data/CreatorData'
 import { IoMdDownload} from 'react-icons/io'
-const DashStructure3 = () => {
+const VideoDetails = () => {
     return (
         <div className={style.main_div}>
             {heading2.map((item) => (
@@ -68,4 +68,4 @@ const DashStructure3 = () => {
     )
 }
 
-export default DashStructure3
+export default VideoDetails

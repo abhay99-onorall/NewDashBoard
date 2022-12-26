@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import style from './DashStructure.module.css'
 import {RxCaretRight} from 'react-icons/rx'
 
-const DashStructure4 = () => {
+const AdminReport = () => {
 
     const [clicked, setClicked] = useState(false)
 
@@ -66,5 +66,5 @@ const DashStructure4 = () => {
     )
 }
 
-export default DashStructure4
+export default AdminReport
 

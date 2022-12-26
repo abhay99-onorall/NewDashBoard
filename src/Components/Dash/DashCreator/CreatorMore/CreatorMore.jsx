@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import style from "./MoreDetails.module.css";
-import { heading, MoreDetailsDataContent, heading2 } from "./MoreDetailsData";
+import style from "./CreatorMore.module.css";
+import { heading, CreatorMoreDataContent, heading2 } from "./CreatorMoreData";
 import { AiFillLike, AiFillEye, AiFillCaretDown } from "react-icons/ai";
 import { FaCommentAlt } from "react-icons/fa";
 import { IoEyeSharp } from "react-icons/io";
 import { RiEditBoxLine } from 'react-icons/ri'
 // import VideoComponent from "./VideoComponent";
 // import GroupSkillComponent from "./GroupSkill/GroupSkillComponent";
-import { data1, data2 } from './DashData'
-import './DashStructure2.css'
+import { userChannel, CreatorChannnel } from '../../../../Data/CreatorData'
+// import './DashStructure2.css'
 
-const MoreDetails = () => {
+const CreatorMore = () => {
     const [clicked, setClicked] = useState(false);
     const [id, setId] = useState();
     const handleClick = (id) => {
@@ -22,24 +22,24 @@ const MoreDetails = () => {
 
     return (
         <>
-            <div className='main_container'>
-                <div className='upper_container'>
-                    <div className='left_container'>
-                        <div className='left_container_profile'>
+            <div className={style.main_container}>
+                <div className={style.upper_container}>
+                    <div className={style.left_container}>
+                        <div className={style.left_container_profile}>
                             <img
                                 src='https://cdn.pixabay.com/photo/2021/12/09/22/17/table-setting-6859276_960_720.jpg'
                             />
                         </div>
-                        <div className='div_container' >
-                            {data1.map((item) => (
+                        <div className={style.div_container} >
+                            {userChannel.map((item) => (
                                 <>
-                                    <div className='channel_name'>{item.channel}</div>
+                                    <div className={style.channel_name}>{item.channel}</div>
                                     <div style={{ display: 'flex', gap: "5px" }}>
                                         {item.category.map(items => (
-                                            <div className='channel_category'>{items}</div>
+                                            <div className={style.channel_category}>{items}</div>
                                         ))}
                                     </div>
-                                    <div className='channel_supporters'>
+                                    <div className={style.channel_supporters}>
                                         {item.supporters}
                                     </div>
                                     <div>{item.creatorid}</div>
@@ -49,17 +49,17 @@ const MoreDetails = () => {
                             ))}
                         </div>
                     </div>
-                    <div className='right_container'>
-                        <div className='div_container' >
-                            {data2.map((item) => (
+                    <div className={style.right_container}>
+                        <div className={style.div_container} >
+                            {CreatorChannnel.map((item) => (
                                 <>
-                                    <div className='channel_name'>{item.user}</div>
+                                    <div className={style.channel_name}>{item.user}</div>
                                     <div style={{ display: 'flex', gap: "5px" }}>
                                         {item.interest.map(items => (
-                                            <div className='channel_category'>{items}</div>
+                                            <div className={style.channel_category}>{items}</div>
                                         ))}
                                     </div>
-                                    <div className='channel_supporters'>
+                                    <div className={style.channel_supporters}>
                                         {item.mobileno}
                                     </div>
                                     <div>{item.mail}</div>
@@ -68,15 +68,15 @@ const MoreDetails = () => {
                                 </>
                             ))}
                         </div>
-                        <div className='right_container_profile'>
+                        <div className={style.right_container_profile}>
                             <img
                                 src='https://cdn.pixabay.com/photo/2021/12/09/22/17/table-setting-6859276_960_720.jpg'
                             />
                         </div>
                     </div>
                 </div>
-                <div className='border'></div>
-                <div className='lower_container'>
+                <div className={style.border}></div>
+                <div className={style.lower_container}>
 
                 </div>
             </div>
@@ -199,6 +199,6 @@ const MoreDetails = () => {
     );
 };
 
-export default MoreDetails;
+export default CreatorMore;
 
 

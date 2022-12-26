@@ -2,10 +2,10 @@ import ApexCharts from "apexcharts";
 import React, { useEffect, useState } from "react";
 import styles from "./DashChart.module.css";
 import Chart from "react-apexcharts";
-import { Data } from "../DashBoard/Data";
-import { Data2 } from "../DashBoard/Data";
+import { Data, Data2 } from "../../../Data/ChartData";
 
-const DashMain = () => {
+
+const DashChart = () => {
   const [amount, setAmount] = useState(Data?.map((items) => items.amount));
   const [xname, setXname] = useState(Data?.map((item) => item.name));
   const [coloring, setColoring] = useState(Data?.map((item) => item.color));
@@ -209,4 +209,4 @@ const DashMain = () => {
   );
 };
 
-export default DashMain;
+export default DashChart;
