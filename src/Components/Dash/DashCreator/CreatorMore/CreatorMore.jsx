@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "./CreatorMore.module.css";
-import { heading, CreatorMoreDataContent, heading2 } from "./CreatorMoreData";
+import { heading, CreatorMoreDataContent, heading2 } from "../../../../Data/CreatorData";
 import { AiFillLike, AiFillEye, AiFillCaretDown } from "react-icons/ai";
 import { FaCommentAlt } from "react-icons/fa";
 import { IoEyeSharp } from "react-icons/io";
@@ -10,7 +10,7 @@ import { RiEditBoxLine } from 'react-icons/ri'
 import { userChannel, CreatorChannnel } from '../../../../Data/CreatorData'
 // import './DashStructure2.css'
 
-const CreatorMore = () => {
+const CreatorMore = (props) => {
     const [clicked, setClicked] = useState(false);
     const [id, setId] = useState();
     const handleClick = (id) => {
@@ -21,7 +21,8 @@ const CreatorMore = () => {
     console.log(heading2);
 
     return (
-        <>
+        <div>
+            <div style={{height: "20px", width: "20px"}} onClick={()=>props.setLook(false)}>x</div>
             <div className={style.main_container}>
                 <div className={style.upper_container}>
                     <div className={style.left_container}>
@@ -195,7 +196,7 @@ const CreatorMore = () => {
                     })}
                 </tbody>
             </table>
-        </>
+        </div>
     );
 };
 

@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.main{
+	height: 100vh;
+	width: 100px;
+	min-width: 100px;
+	display: flex;
+	flex-direction: column;
+	background: #6247AA;
+	gap: 1rem;
+	align-items: center;
+}
+
+.icon, .site_icon_container, .icon_active{
+	width: 100%;
+	height: 60px;
+	background:transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.icon,.site_icon_container{
+	color: #fff;
+}
+
+.site_icon_container > div{
+	width: 45px;
+	height: 45px;
+	border-radius: 70px 70px 5px 70px;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon_active{
+	border-radius: 20px 0px 0px 20px;
+	background: #fff;
+	color: #6247AA;
+}

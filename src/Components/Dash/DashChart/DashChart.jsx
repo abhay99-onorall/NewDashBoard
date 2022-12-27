@@ -1,4 +1,4 @@
-import ApexCharts from "apexcharts";
+
 import React, { useEffect, useState } from "react";
 import styles from "./DashChart.module.css";
 import Chart from "react-apexcharts";

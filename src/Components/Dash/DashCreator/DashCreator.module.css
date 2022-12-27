@@ -148,6 +148,7 @@
     border-radius: 50%;
     background: rgba(226, 207, 234, 0.51);
     color: #A06CD5;
+    cursor: pointer;
 }
 
 .first_main_container_heading {
